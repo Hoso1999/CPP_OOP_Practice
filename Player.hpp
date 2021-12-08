@@ -2,11 +2,11 @@
 #define PLAYER_HPP
 
 #include <string>
+#include <vector>
 
 class Player
 {
 	int correctAnswers;
-	std::string questList[50];
 	public:
 		Player();
 		~Player();

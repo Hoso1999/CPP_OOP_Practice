@@ -1,19 +1,19 @@
 #ifndef QUESTION_HPP
 #define QUESTION_HPP
 #include <string>
+#include <vector>
 
-enum class QuestNum
-{
-	Q_SQUARE,
-	Q_TRIANGE,
-	Q_CIRCLE
-};
+
+
+
+
+
 
 class Question
 {
 	std::string quest;
 	public:
-		Question(QuestNum, std::string*);
+		Question(std::vector<std::string> questList);
 		~Question();
 
 };

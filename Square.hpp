@@ -4,7 +4,7 @@
 #include "Polygon.hpp"
 
 
-class Square : public Shape
+class Square : public Polygon
 {
 private:
     double side;
