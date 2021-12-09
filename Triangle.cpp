@@ -25,7 +25,7 @@ double Triangle::height(BaseTriangle base = BaseTriangle::BASE_A)
         side = b;
     else
         side = c;
-    return 2 * this->area() / side;
+    return std::to_string(2 * this->area()) + "/" +  std::to_string(side);
 }
 
 double Triangle::outsideRadius()
