@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <exception>
+#include <string>
 
 
 struct FractZeroDividedExeption : public std::exception
@@ -17,12 +18,14 @@ class FractNumber
 {
     double  numerator;
     double  denumerator;
+    int gcd(int, int);
     public:
         FractNumber(double, double);
         FractNumber();
         FractNumber(const FractNumber&);
         ~FractNumber();
         void print();
+        std::string get();
         FractNumber operator+(const FractNumber&);
         FractNumber operator-(const FractNumber&);
         FractNumber operator*(const FractNumber&);
